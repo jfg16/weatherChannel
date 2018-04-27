@@ -88,7 +88,7 @@
 
         $(document).ready(function(){
            $(':button').click(function(){
-                var message = 'q=' + $('#searchValue').val()+'&days=3';   
+                var message = 'q=' + $('#searchValue').val()+'&days=10';   
                 $.ajax({
                       type: 'GET',
                       url: 'https://api.apixu.com/v1/forecast.json?key=d77b8f05ff314b0f8a9214841182704',
@@ -103,8 +103,16 @@
                      $('#Day1High').html("<center>" + json.forecast.forecastday[0].day.maxtemp_f + "</center>");
                      $('#Day2Low').html("<center>" + json.forecast.forecastday[1].day.mintemp_f + "</center>");
                      $('#Day2High').html("<center>" + json.forecast.forecastday[1].day.maxtemp_f + "</center>");        
-
-                     
+                     $('#Day3Low').html("<center>" + json.forecast.forecastday[2].day.mintemp_f + "</center>");
+                     $('#Day3High').html("<center>" + json.forecast.forecastday[2].day.maxtemp_f + "</center>");
+                     $('#Day4Low').html("<center>" + json.forecast.forecastday[3].day.mintemp_f + "</center>");
+                     $('#Day4High').html("<center>" + json.forecast.forecastday[3].day.maxtemp_f + "</center>");
+                     $('#Day5Low').html("<center>" + json.forecast.forecastday[4].day.mintemp_f + "</center>");
+                     $('#Day5High').html("<center>" + json.forecast.forecastday[4].day.maxtemp_f + "</center>");
+                     $('#Day6Low').html("<center>" + json.forecast.forecastday[5].day.mintemp_f + "</center>");
+                     $('#Day6High').html("<center>" + json.forecast.forecastday[5].day.maxtemp_f + "</center>");
+                     $('#Day7Low').html("<center>" + json.forecast.forecastday[6].day.mintemp_f + "</center>");
+                     $('#Day7High').html("<center>" + json.forecast.forecastday[6].day.maxtemp_f + "</center>");
                 })
                 .fail(function() {
                       alert("Posting failed.");              
