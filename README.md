@@ -4,20 +4,18 @@
 Web Application Development
 
 ### Assignment Date:  
-(Month Day, Year)
+April 27, 2018
 
 ### Student Name:  
-(First and Last Name)
+Jonathan Garcia
 
 ### Project Description:
-(In your own words, briefly describe the assignment.)
+Creating a weather application, using Ajax, JSON and API in order to gather the data and be able to display it.
 
 ### View Project:
-(Replace this statement with your Github Page URL that was created when you 
- published the project.)
+https://jfg16.github.io/weatherChannel/
 
 ### Lessons Learned in the Assignment:
-1. (Briefly describe a lesson/concept learned in this lesson.)
-2. (Briefly describe a lesson/concept learned in this lesson.)
-3. (Briefly describe a lesson/concept learned in this lesson.)
-
+1. JSON formatting could even be used within HTML files, through script tags.
+2. API keys allow the application to connect to the database needed, in this case with Apixu.
+3. Placeholders/ids are defined in order to demonstrate where the values gathered, will be placed.
