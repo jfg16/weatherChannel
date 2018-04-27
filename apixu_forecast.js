@@ -1,7 +1,7 @@
 /*
     Program Name:   Seminole Weather Channel
-    Author: 
-    Date: 
+    Author: Jonathan Garcia
+    Date: 04/27/18
     Filename:   apixu_forecast.js
 */
 
@@ -91,7 +91,7 @@
                 var message = 'q=' + $('#searchValue').val()+'&days=3';   
                 $.ajax({
                       type: 'GET',
-                      url: 'https://api.apixu.com/v1/forecast.json?key=ADD_YOUR_API_KEY_HERE',
+                      url: 'https://api.apixu.com/v1/forecast.json?key=d77b8f05ff314b0f8a9214841182704',
                       data: message             
                 })
                 .done(function(json){
